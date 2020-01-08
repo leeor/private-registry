@@ -1,0 +1,38 @@
+{
+  "name": "reason-graphql",
+  "version": "0.6.0",
+  "author": "Sikan He",
+  "license": "MIT",
+  "repository": "https://github.com/sikanhe/reason-graphql",
+  "homepage": "https://github.com/sikanhe/reason-graphql#readme",
+  "keywords": [
+    "BuckleScript",
+    "GraphQL",
+    "Reason",
+    "ReasonML"
+  ],
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "yarn build && jest"
+  },
+  "files": [
+    "src/",
+    "bsconfig.json"
+  ],
+  "jest": {
+    "testMatch": [
+      "**/?(*_)(spec|test).bs.js?(x)"
+    ]
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.9",
+    "bs-platform": "^7.0.1"
+  },
+  "dependencies": {
+    "bs-let": "^0.1.11",
+    "reason-future": "^2.4.0",
+    "reason-promise": "^1.0.1"
+  }
+}
